@@ -31,8 +31,8 @@ Structure of the script:
 #  - - Rule1: Priority 0 
 #  - - Rule2: Priority 1
 
-Created By: Alex Ivantsov
-Email: Alex@ivantsov.tech
+Created By: Pankaj Sharma
+Email: Pankaj7121@gmail.com
 
 #>
 
@@ -191,16 +191,17 @@ if ($Answer -eq 'y' -or $Answer -eq 'yes') {
 
 
    $SensitiveInfoHigh = @(
-      @{Name = "U.S. Social Security Number (SSN)"; minCount = "3"; confidencelevel = 'High' };
+      @{Name = "U.K National Insurance Number (NI)"; minCount = "3"; confidencelevel = 'High' };
       @{Name = "Credit Card Number"; minCount = "3"; confidencelevel = 'High' };
       #   @{Name= "Drug Enforcement Agency (DEA) Number"; minCount="3"; confidencelevel = 'High'};
       #   @{Name= "U.S. / U.K. Passport Number"}; Known Bug. Needs GUID- See next line
       @{Name = "178ec42a-18b4-47cc-85c7-d62c92fd67f8"; minCount = "1"; confidencelevel = 'High' }; # U.S. / U.K. Passport Number
-      @{Name = "U.S. Bank Account Number"; minCount = "3"; confidencelevel = 'High' };
-      @{Name = "U.S. Driver's License Number"; minCount = "3"; confidencelevel = 'High' };
-      @{Name = "U.S. Individual Taxpayer Identification Number (ITIN)"; minCount = "3"; confidencelevel = 'High' };
+      @{Name = "U.K. Bank Account Number"; minCount = "3"; confidencelevel = 'High' };
+      @{Name = "U.K. Driver's License Number"; minCount = "3"; confidencelevel = 'High' };
+      @{Name = "U.K. Individual Taxpayer Identification Number (ITIN)"; minCount = "3"; confidencelevel = 'High' };
       @{Name = "International Banking Account Number (IBAN)"; minCount = "3"; confidencelevel = 'High' };
       @{Name = "Medicare Beneficiary Identifier (MBI) card"; minCount = "3"; confidencelevel = 'High' };
+      @{Name = "National Health Service (NHS) card"; minCount = "3"; confidencelevel = 'High' };
 
       @{Name = "Azure DocumentDB Auth Key"; minCount = "3"; confidencelevel = 'High' };
       @{Name = "Azure IAAS Database Connection String and Azure SQL Connection String"; minCount = "3"; confidencelevel = 'High' };
@@ -214,13 +215,13 @@ if ($Answer -eq 'y' -or $Answer -eq 'yes') {
    )
 
    $SensitiveInfoLow = @(
-      @{Name = "U.S. Social Security Number (SSN)"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
+      @{Name = "U.K. National Insurance Number (NNI)"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
       @{Name = "Credit Card Number"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
       #   @{Name= "Drug Enforcement Agency (DEA) Number"; minCount="1"; maxCount="2"; confidencelevel = 'High'};
       #   @{Name= "U.S. / U.K. Passport Number"}; Known Bug. Needs GUID- See next line
       @{Name = "178ec42a-18b4-47cc-85c7-d62c92fd67f8"; minCount = "1"; confidencelevel = 'High' }; # U.S. / U.K. Passport Number
-      @{Name = "U.S. Bank Account Number"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
-      @{Name = "U.S. Driver's License Number"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
+      @{Name = "U.K. Bank Account Number"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
+      @{Name = "U.K. Driver's License Number"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
       @{Name = "U.S. Individual Taxpayer Identification Number (ITIN)"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
       @{Name = "International Banking Account Number (IBAN)"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
       @{Name = "Medicare Beneficiary Identifier (MBI) card"; minCount = "1"; maxCount = "2"; confidencelevel = 'High' };
@@ -237,13 +238,13 @@ if ($Answer -eq 'y' -or $Answer -eq 'yes') {
    )
 
    $SensitiveInfo = @(
-      @{Name = "U.S. Social Security Number (SSN)"; minCount = "1"; confidencelevel = 'High' };
+      @{Name = "U.K. Social Security Number (SSN)"; minCount = "1"; confidencelevel = 'High' };
       @{Name = "Credit Card Number"; minCount = "1"; confidencelevel = 'High' };
       #   @{Name= "Drug Enforcement Agency (DEA) Number"; minCount="1"; confidencelevel = 'High'};
       #   @{Name= "U.S. / U.K. Passport Number"}; Known Bug. Needs GUID- See next line
       @{Name = "178ec42a-18b4-47cc-85c7-d62c92fd67f8"; minCount = "1"; confidencelevel = 'High' }; # U.S. / U.K. Passport Number
-      @{Name = "U.S. Bank Account Number"; minCount = "1"; confidencelevel = 'High' };
-      @{Name = "U.S. Driver's License Number"; minCount = "1"; confidencelevel = 'High' };
+      @{Name = "U.K. Bank Account Number"; minCount = "1"; confidencelevel = 'High' };
+      @{Name = "U.K. Driver's License Number"; minCount = "1"; confidencelevel = 'High' };
       @{Name = "U.S. Individual Taxpayer Identification Number (ITIN)"; minCount = "1"; confidencelevel = 'High' };
       @{Name = "International Banking Account Number (IBAN)"; minCount = "1"; confidencelevel = 'High' };
       @{Name = "Medicare Beneficiary Identifier (MBI) card"; minCount = "1"; confidencelevel = 'High' };
